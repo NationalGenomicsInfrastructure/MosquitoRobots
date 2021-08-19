@@ -1,0 +1,198 @@
+<CustomProtocol IsUsing9mmTape="True" Name="New custom protocol" xmlns="clr-namespace:MosquitoCore.Models;assembly=MosquitoCore" xmlns:mme="clr-namespace:MosquitoCore.Models.Experiment;assembly=MosquitoCore" xmlns:mmec="clr-namespace:MosquitoCore.Models.Experiment.Custom;assembly=MosquitoCore" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <CustomProtocol.Experiments>
+    <mmec:CustomExperiment Information="{x:Null}" VolumeCalcSummary="{x:Null}" AbortOnBadBarcode="False" Name="New Wizard" ScanBarcodes="False">
+      <mmec:CustomExperiment.ChangePipettesPositionOptions>
+        <mme:ChangePipettesPositionOptions Column="0" IsEnabled="False" Nest="0" Row="0" SubWell="0">
+          <mme:ChangePipettesPositionOptions.VersionInfo>
+            <VersionInfo Type="mme:ChangePipettesPositionOptions" Version="1" />
+          </mme:ChangePipettesPositionOptions.VersionInfo>
+        </mme:ChangePipettesPositionOptions>
+      </mmec:CustomExperiment.ChangePipettesPositionOptions>
+      <mmec:CustomExperiment.CustomConfigurations>
+        <mmec:CustomConfiguration Variable="{x:Reference __ReferenceID10}" Instructions="number of columns to be diluted" Name="columns">
+          <mmec:CustomConfiguration.VersionInfo>
+            <VersionInfo Type="mmec:CustomConfiguration" Version="1" />
+          </mmec:CustomConfiguration.VersionInfo>
+        </mmec:CustomConfiguration>
+      </mmec:CustomExperiment.CustomConfigurations>
+      <mmec:CustomExperiment.PlateSelections>
+        <PlateSelection AspirateFromBase="False" InitialWellVolume="0" InitialWellVolumeSelection="Unknown" IsXTLStripPlateSelection="False" NestIndex="0" PlateType="Eppendorf twin.tec® 96" UserDefinedPlateDescription="sample">
+          <PlateSelection.VersionInfo>
+            <VersionInfo Type="PlateSelection" Version="2" />
+          </PlateSelection.VersionInfo>
+        </PlateSelection>
+        <PlateSelection AspirateFromBase="False" InitialWellVolume="0" InitialWellVolumeSelection="Unknown" IsXTLStripPlateSelection="False" NestIndex="1" PlateType="LVSD 384 plate" UserDefinedPlateDescription="SD">
+          <PlateSelection.VersionInfo>
+            <VersionInfo Type="PlateSelection" Version="2" />
+          </PlateSelection.VersionInfo>
+        </PlateSelection>
+        <PlateSelection AspirateFromBase="False" InitialWellVolume="0" InitialWellVolumeSelection="Unknown" IsXTLStripPlateSelection="False" NestIndex="2" PlateType="Corning 3595 96-well" UserDefinedPlateDescription="EB in col 1">
+          <PlateSelection.VersionInfo>
+            <VersionInfo Type="PlateSelection" Version="2" />
+          </PlateSelection.VersionInfo>
+        </PlateSelection>
+        <PlateSelection PlateType="{x:Null}" UserDefinedPlateDescription="{x:Null}" AspirateFromBase="False" InitialWellVolume="0" InitialWellVolumeSelection="Unknown" IsXTLStripPlateSelection="False" NestIndex="3">
+          <PlateSelection.VersionInfo>
+            <VersionInfo Type="PlateSelection" Version="2" />
+          </PlateSelection.VersionInfo>
+        </PlateSelection>
+        <PlateSelection PlateType="{x:Null}" AspirateFromBase="False" InitialWellVolume="0" InitialWellVolumeSelection="Unknown" IsXTLStripPlateSelection="False" NestIndex="4" UserDefinedPlateDescription="">
+          <PlateSelection.VersionInfo>
+            <VersionInfo Type="PlateSelection" Version="2" />
+          </PlateSelection.VersionInfo>
+        </PlateSelection>
+      </mmec:CustomExperiment.PlateSelections>
+      <mmec:CustomExperiment.ProtocolVariablesDocument>
+        <mmec:ProtocolVariablesDocument Name="Dilution_for_qPCR_210719" ProtocolFilePath="C:\Users\Public\TTPLabTech\Mosquito\Protocols\dilution_for_qPCR_210719.protocol">
+          <mmec:ProtocolVariablesDocument.Variables>
+            <mmec:Variable x:TypeArguments="x:Int32" Expression="{x:Null}" VersionInfo="{x:Reference __ReferenceID1}" x:Name="__ReferenceID10" Description="number of columns to be diluted" IsReadOnly="False" Name="columns" TypeFullName="System.Int32">
+              <mmec:Variable.Value>
+                <x:Int32>1</x:Int32>
+              </mmec:Variable.Value>
+              <mmec:Variable.VersionInfos>
+                <VersionInfo x:Name="__ReferenceID1" Type="mmec:Variable(x:Int32)" Version="1" />
+              </mmec:Variable.VersionInfos>
+            </mmec:Variable>
+            <mmec:ProtocolVariable x:TypeArguments="s:UInt32" Description="columns dilution 1" Expression="[columns]" IsReadOnly="True" Name="col dil1" PropertyName="SrcEndCol" TypeFullName="System.UInt32">
+              <mmec:ProtocolVariable.TransferIndexes>
+                <x:Int32>6</x:Int32>
+              </mmec:ProtocolVariable.TransferIndexes>
+              <mmec:ProtocolVariable.Value>
+                <s:UInt32>1</s:UInt32>
+              </mmec:ProtocolVariable.Value>
+              <mmec:ProtocolVariable.VersionInfo>
+                <VersionInfo x:Name="__ReferenceID2" Type="mmec:ProtocolVariable(s:UInt32)" Version="0" />
+              </mmec:ProtocolVariable.VersionInfo>
+              <mmec:ProtocolVariable.VersionInfos>
+                <VersionInfo Type="mmec:Variable(s:UInt32)" Version="1" />
+                <x:Reference>__ReferenceID2</x:Reference>
+              </mmec:ProtocolVariable.VersionInfos>
+            </mmec:ProtocolVariable>
+            <mmec:ProtocolVariable x:TypeArguments="s:UInt32" Description="columns dilution 2" Expression="[columns]*2" IsReadOnly="True" Name="col dil2" PropertyName="SrcEndCol" TypeFullName="System.UInt32">
+              <mmec:ProtocolVariable.TransferIndexes>
+                <x:Int32>8</x:Int32>
+              </mmec:ProtocolVariable.TransferIndexes>
+              <mmec:ProtocolVariable.Value>
+                <s:UInt32>2</s:UInt32>
+              </mmec:ProtocolVariable.Value>
+              <mmec:ProtocolVariable.VersionInfo>
+                <VersionInfo x:Name="__ReferenceID3" Type="mmec:ProtocolVariable(s:UInt32)" Version="0" />
+              </mmec:ProtocolVariable.VersionInfo>
+              <mmec:ProtocolVariable.VersionInfos>
+                <VersionInfo Type="mmec:Variable(s:UInt32)" Version="1" />
+                <x:Reference>__ReferenceID3</x:Reference>
+              </mmec:ProtocolVariable.VersionInfos>
+            </mmec:ProtocolVariable>
+            <mmec:ProtocolVariable x:TypeArguments="s:UInt32" Description="columns dilution 3" Expression="[columns]*2" IsReadOnly="True" Name="col dil3" PropertyName="SrcEndCol" TypeFullName="System.UInt32">
+              <mmec:ProtocolVariable.TransferIndexes>
+                <x:Int32>10</x:Int32>
+              </mmec:ProtocolVariable.TransferIndexes>
+              <mmec:ProtocolVariable.Value>
+                <s:UInt32>2</s:UInt32>
+              </mmec:ProtocolVariable.Value>
+              <mmec:ProtocolVariable.VersionInfo>
+                <VersionInfo x:Name="__ReferenceID4" Type="mmec:ProtocolVariable(s:UInt32)" Version="0" />
+              </mmec:ProtocolVariable.VersionInfo>
+              <mmec:ProtocolVariable.VersionInfos>
+                <VersionInfo Type="mmec:Variable(s:UInt32)" Version="1" />
+                <x:Reference>__ReferenceID4</x:Reference>
+              </mmec:ProtocolVariable.VersionInfos>
+            </mmec:ProtocolVariable>
+            <mmec:ProtocolVariable x:TypeArguments="s:UInt32" Description="columns dilution 4" Expression="[columns]*2" IsReadOnly="True" Name="col dil4" PropertyName="SrcEndCol" TypeFullName="System.UInt32">
+              <mmec:ProtocolVariable.TransferIndexes>
+                <x:Int32>12</x:Int32>
+              </mmec:ProtocolVariable.TransferIndexes>
+              <mmec:ProtocolVariable.Value>
+                <s:UInt32>2</s:UInt32>
+              </mmec:ProtocolVariable.Value>
+              <mmec:ProtocolVariable.VersionInfo>
+                <VersionInfo x:Name="__ReferenceID5" Type="mmec:ProtocolVariable(s:UInt32)" Version="0" />
+              </mmec:ProtocolVariable.VersionInfo>
+              <mmec:ProtocolVariable.VersionInfos>
+                <VersionInfo Type="mmec:Variable(s:UInt32)" Version="1" />
+                <x:Reference>__ReferenceID5</x:Reference>
+              </mmec:ProtocolVariable.VersionInfos>
+            </mmec:ProtocolVariable>
+            <mmec:ProtocolVariable x:TypeArguments="s:UInt32" Description="columns buffer 1" Expression="[columns]*2" IsReadOnly="True" Name="col buffer1" PropertyName="DstEndCol" TypeFullName="System.UInt32">
+              <mmec:ProtocolVariable.TransferIndexes>
+                <x:Int32>1</x:Int32>
+              </mmec:ProtocolVariable.TransferIndexes>
+              <mmec:ProtocolVariable.Value>
+                <s:UInt32>2</s:UInt32>
+              </mmec:ProtocolVariable.Value>
+              <mmec:ProtocolVariable.VersionInfo>
+                <VersionInfo x:Name="__ReferenceID6" Type="mmec:ProtocolVariable(s:UInt32)" Version="0" />
+              </mmec:ProtocolVariable.VersionInfo>
+              <mmec:ProtocolVariable.VersionInfos>
+                <VersionInfo Type="mmec:Variable(s:UInt32)" Version="1" />
+                <x:Reference>__ReferenceID6</x:Reference>
+              </mmec:ProtocolVariable.VersionInfos>
+            </mmec:ProtocolVariable>
+            <mmec:ProtocolVariable x:TypeArguments="s:UInt32" Description="columns buffer 2" Expression="[columns]*2" IsReadOnly="True" Name="col buffer 2" PropertyName="DstEndCol" TypeFullName="System.UInt32">
+              <mmec:ProtocolVariable.TransferIndexes>
+                <x:Int32>2</x:Int32>
+              </mmec:ProtocolVariable.TransferIndexes>
+              <mmec:ProtocolVariable.Value>
+                <s:UInt32>2</s:UInt32>
+              </mmec:ProtocolVariable.Value>
+              <mmec:ProtocolVariable.VersionInfo>
+                <VersionInfo x:Name="__ReferenceID7" Type="mmec:ProtocolVariable(s:UInt32)" Version="0" />
+              </mmec:ProtocolVariable.VersionInfo>
+              <mmec:ProtocolVariable.VersionInfos>
+                <VersionInfo Type="mmec:Variable(s:UInt32)" Version="1" />
+                <x:Reference>__ReferenceID7</x:Reference>
+              </mmec:ProtocolVariable.VersionInfos>
+            </mmec:ProtocolVariable>
+            <mmec:ProtocolVariable x:TypeArguments="s:UInt32" Description="columns buffer 3" Expression="[columns]*2" IsReadOnly="True" Name="col buffer 3" PropertyName="DstEndCol" TypeFullName="System.UInt32">
+              <mmec:ProtocolVariable.TransferIndexes>
+                <x:Int32>3</x:Int32>
+              </mmec:ProtocolVariable.TransferIndexes>
+              <mmec:ProtocolVariable.Value>
+                <s:UInt32>2</s:UInt32>
+              </mmec:ProtocolVariable.Value>
+              <mmec:ProtocolVariable.VersionInfo>
+                <VersionInfo x:Name="__ReferenceID8" Type="mmec:ProtocolVariable(s:UInt32)" Version="0" />
+              </mmec:ProtocolVariable.VersionInfo>
+              <mmec:ProtocolVariable.VersionInfos>
+                <VersionInfo Type="mmec:Variable(s:UInt32)" Version="1" />
+                <x:Reference>__ReferenceID8</x:Reference>
+              </mmec:ProtocolVariable.VersionInfos>
+            </mmec:ProtocolVariable>
+            <mmec:ProtocolVariable x:TypeArguments="s:UInt32" Description="columns buffer 4" Expression="[columns]*2" IsReadOnly="True" Name="col buffer 4" PropertyName="DstEndCol" TypeFullName="System.UInt32">
+              <mmec:ProtocolVariable.TransferIndexes>
+                <x:Int32>4</x:Int32>
+              </mmec:ProtocolVariable.TransferIndexes>
+              <mmec:ProtocolVariable.Value>
+                <s:UInt32>2</s:UInt32>
+              </mmec:ProtocolVariable.Value>
+              <mmec:ProtocolVariable.VersionInfo>
+                <VersionInfo x:Name="__ReferenceID9" Type="mmec:ProtocolVariable(s:UInt32)" Version="0" />
+              </mmec:ProtocolVariable.VersionInfo>
+              <mmec:ProtocolVariable.VersionInfos>
+                <VersionInfo Type="mmec:Variable(s:UInt32)" Version="1" />
+                <x:Reference>__ReferenceID9</x:Reference>
+              </mmec:ProtocolVariable.VersionInfos>
+            </mmec:ProtocolVariable>
+          </mmec:ProtocolVariablesDocument.Variables>
+          <mmec:ProtocolVariablesDocument.VersionInfo>
+            <VersionInfo Type="mmec:ProtocolVariablesDocument" Version="1" />
+          </mmec:ProtocolVariablesDocument.VersionInfo>
+        </mmec:ProtocolVariablesDocument>
+      </mmec:CustomExperiment.ProtocolVariablesDocument>
+      <mmec:CustomExperiment.VersionInfo>
+        <VersionInfo x:Name="__ReferenceID11" Type="mmec:CustomExperiment" Version="1" />
+      </mmec:CustomExperiment.VersionInfo>
+      <mmec:CustomExperiment.VersionInfos>
+        <VersionInfo Type="mme:MosquitoExperiment" Version="2" />
+        <x:Reference>__ReferenceID11</x:Reference>
+      </mmec:CustomExperiment.VersionInfos>
+    </mmec:CustomExperiment>
+  </CustomProtocol.Experiments>
+  <CustomProtocol.VersionInfo>
+    <VersionInfo x:Name="__ReferenceID0" Type="CustomProtocol" Version="1" />
+  </CustomProtocol.VersionInfo>
+  <CustomProtocol.VersionInfos>
+    <VersionInfo Type="MosquitoProtocol" Version="2" />
+    <x:Reference>__ReferenceID0</x:Reference>
+  </CustomProtocol.VersionInfos>
+</CustomProtocol>

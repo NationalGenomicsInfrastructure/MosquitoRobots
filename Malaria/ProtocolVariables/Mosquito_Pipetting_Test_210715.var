@@ -1,0 +1,5 @@
+<ProtocolVariablesDocument Name="Mosquito_Pipetting_Test_210715" ProtocolFilePath="C:\Users\Public\TTPLabTech\Mosquito\Protocols\Mosquito_Pipetting_Test_210715.protocol" xmlns="clr-namespace:MosquitoCore.Models.Experiment.Custom;assembly=MosquitoCore" xmlns:mm="clr-namespace:MosquitoCore.Models;assembly=MosquitoCore">
+  <ProtocolVariablesDocument.VersionInfo>
+    <mm:VersionInfo Type="ProtocolVariablesDocument" Version="1" />
+  </ProtocolVariablesDocument.VersionInfo>
+</ProtocolVariablesDocument>
